@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gridsome:
+    image: gridsome
+    ports:
+      - "8080:8080"
+    command: develop -h 0.0.0.0
+    volumes:
+      - .:/opt
+    working_dir: /opt
